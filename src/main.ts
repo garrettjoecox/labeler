@@ -39,7 +39,7 @@ ${diff.replace(/%0A/gs, '\n').replace(DIFF_HEADER_REGEX, '')}
         if (prText.match(FS_DIFF_SECTION_REGEX)) {
           prText = prText.replace(FS_DIFF_SECTION_REGEX, fsDiffText);
         } else {
-          prText += fsDiffText;
+          prText += '\n\n' + fsDiffText;
         }
       } else {
         prText = prText.replace(FS_DIFF_SECTION_REGEX, '');
