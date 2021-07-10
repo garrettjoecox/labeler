@@ -22,7 +22,7 @@ const DIFF_HEADER_REGEX = /(^(.+)\+\+\+ [\w\/\.\-]+\n)/s;
       pull_number: prNumber
     });
 
-    const fsDiffText = `<!--- fs:start -->
+    const fsDiffText = `\n\n<!--- fs:start -->
 <details>
 <summary>File System Diff</summary>
 
